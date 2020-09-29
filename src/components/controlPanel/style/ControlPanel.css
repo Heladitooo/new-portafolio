@@ -1,0 +1,35 @@
+.panels {
+    display: grid;
+    list-style: none;
+    justify-content: end;
+    grid-template-columns: repeat(3,30%);
+}
+
+.panels li {
+    width: 100%;
+    justify-content: center;
+}
+
+.panels li a {
+    cursor: pointer;
+    transition: .2s;
+    text-decoration: none;
+    color: white;
+}
+
+.panels li a {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.panels li a:hover {
+    color: #00709E;
+}
+
+@media only screen and (max-width: 600px){
+    .panels {
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+    }
+}

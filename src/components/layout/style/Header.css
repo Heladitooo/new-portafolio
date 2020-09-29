@@ -1,0 +1,45 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 50%);
+    height: 10%;
+    background-color: black;
+    color: white;
+}
+
+.header-pictureContainer {
+    width: 6%;
+    margin-left: 2%;
+    display: grid;
+    align-content: center;
+    transition: .2s;
+}
+
+.pictureContainer__image {
+    width: 100%;
+}
+
+.header-pictureContainer a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@media only screen and (max-width: 600px){
+    .header {
+        grid-template-columns: 1fr;
+        height: 14%;
+    }
+    .header-pictureContainer {
+        position: fixed;
+        display: flex;
+        top: 87%;
+        z-index: 2;
+        width: 15%;
+        left: 77%;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: black;
+    }
+    
+    .header-pictureContainer:active {
+        border-color: #00709E;
+    }
+}
